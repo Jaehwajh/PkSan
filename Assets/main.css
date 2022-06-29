@@ -50,16 +50,66 @@ main > h2 > a:hover{
 
 /*About Section*/
 #about{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
+    text-align: center;
 }
 
 #about > h1{
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 #about > p{
     font-size: 2rem;
 }
+
+#about > h6{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#pk{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    border-radius: 50%;
+}
+
+.intro{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+/*Footer Section/Ending*/
+
+footer{
+    font-size: 3rem;
+}
+
+footer > li{
+    list-style: none;
+}
+
+footer > li > a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer > li > a:hover{
+    color: rgb(103, 103, 226);
+}
+
+
+/*Fade animation*/
+
+.reveal{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
