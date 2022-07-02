@@ -11,6 +11,10 @@
     color: white;
 }
 
+body{
+    height: 300vh;
+}
+
 /*Navigation bar*/
 .navbar{
     font-size: 6rem;
@@ -18,6 +22,7 @@
     justify-content: center;
     gap: 30px;
     list-style: none;
+    padding-bottom: 100px;
 }
 
 .navbar > li > a{
@@ -31,6 +36,10 @@
 }
 
 /*Main Section*/
+main{
+    padding-bottom: 200px;
+}
+
 main > h2{
     font-size: 2rem;
     font-weight: 400;
@@ -51,6 +60,7 @@ main > h2 > a:hover{
 /*About Section*/
 #about{
     text-align: center;
+    padding-bottom: 200px;
 }
 
 #about > h1{
