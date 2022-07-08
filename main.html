@@ -25,7 +25,7 @@
 
     <!-- PkSan's main channel videos/channel -->
     <Main>
-        <img src="#" alt="PkSan's channel image">
+        <img class="channelArt" src="Assets/images/pkChannelart2.jpg" alt="PkSan's channel image">
 
         <div class="slider">
             <div class="slide">
@@ -49,7 +49,7 @@
         <button class="btn" id="btn-prev">&#8249;&#8249;</button>
         <button class="btn" id="btn-next">&#8250;&#8250;</button>
 
-        <h2>Check out my other videos <a href="#">here</a></h2>
+        <h2><a id="pkChannel" href="#">Check out my other videos here</a></h2>
     </Main>
 
     <section id="about" class="reveal">
@@ -61,15 +61,38 @@
         <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam voluptate iste voluptatum laborum inventore? 
             Quibusdam eos modi quo dolorum explicabo? Ipsam quae quaerat dolorem fuga provident! Ducimus itaque nemo molestias!</p>
 
+        
+
     
     </section>
 
-    <section>
+    <section class="contact revealLeft">
         <h1>Want to reach out?</h1>
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, architecto?</p>
+
+        <form id="form" action="" method="post">
+
+            <div class="formSection">
+                <label for="name">Name</label>
+                <input class="contactForm" type="text" name="name" id="name" required>
+            </div>
+            
+            <div class="formSection">
+                <label for="email">Email</label>
+                <input class="contactForm" type="text" name="email" id="email" required>
+            </div>
+
+            <div class="formSection">
+                <label for="textbox">Message</label>
+                <textarea class="contactForm" type="text" name="message" id="message" rows="6" maxlength="3000" required></textarea>
+            </div>
+
+            <button class="sendButton" type="submit">Send Email</button>
+        </form>
     </section>
 
+    
     <footer>
         <li>&copy; PkSan. All rights reserved.</li><li>Design: <a href="https://jameshwang.netlify.app/">Jaehwa</a></li>
     </footer>

@@ -1,3 +1,12 @@
+/*Youtube Channel*/
+const Youtube = document.querySelector("#pkChannel")
+
+Youtube.addEventListener('click', function(){
+    window.open("https://www.youtube.com/c/PkSan", "_blank")
+})
+
+
+/* Fade in*/
 function reveal(){
     let reveals = document.querySelectorAll(".reveal")
 
@@ -19,10 +28,35 @@ function reveal(){
 window.addEventListener("scroll", reveal);
 
 
+function revealLeft(){
+    let reveals = document.querySelectorAll(".revealLeft")
+
+    for (let i = 0; i < reveals.length; i++){
+        let windowHeight = window.innerHeight;
+        let elementTop= reveals[i].getBoundingClientRect().top;
+        let elementVisible = 100;
+
+        if(elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }else{
+            reveals[i].classList.remove("active")
+        }
+    }
+
+    
+}
+
+window.addEventListener("scroll", revealLeft);
+
+
 
 /* Carousel*/
 
 const slides = document.querySelectorAll('.slide')
+
+slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${indx * 100}%)`;
+  });
 
 
 /*Next button*/
